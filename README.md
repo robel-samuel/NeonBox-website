@@ -47,12 +47,12 @@ infnity/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/neonbox.git
+   git clone https://github.com/robel-samuel/NeonBox-website.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd neonbox
+   cd  NeonBox-website 
    ```
 
 3. Open `index.html` in your browser to view the website
@@ -72,23 +72,5 @@ infnity/
 - Touch-friendly navigation
 - Optimized images for fast loading
 
-## 📞 Contact Information
 
-For business inquiries, you can reach NeonBox at:
-- **Email**: info@neonbox.com
-- **Phone**: (123) 456-7890
-- **Address**: 123 Glow Street, Light City
 
-## 📄 License
-
-This project is proprietary to NeonBox and should not be used without permission.
-
-## 🙏 Acknowledgments
-
-- Images sourced from Unsplash
-- Design inspiration from modern neon artistry
-- Built with passion for lighting and design
-
----
-
-*Bright Ideas, Brilliant Solutions*
