@@ -1,36 +1,63 @@
 #!/bin/bash
 
 # NeonBox GitHub Deployment Script
-# This script initializes a git repository and prepares the project for GitHub
+# This script pushes your project to your GitHub repository
 
 echo "NeonBox GitHub Deployment Script"
 echo "================================"
 echo ""
 
-echo "Initializing git repository..."
-git init
+# Check if git is installed
+if ! command -v git &> /dev/null; then
+    echo "Error: Git is not installed"
+    echo "Please install Git and try again"
+    exit 1
+fi
+
+# Check if repository already exists
+if [ -d ".git" ]; then
+    echo "Git repository already exists."
+    
+    # Check if remote origin is set correctly
+    remote_url=$(git remote get-url origin 2>/dev/null)
+    if [ "$remote_url" != "https://github.com/robel-samuel/NeonBox-website.git" ]; then
+        echo "Updating remote origin..."
+        git remote set-url origin https://github.com/robel-samuel/NeonBox-website.git
+    else
+        echo "Remote origin is already set correctly."
+    fi
+else
+    echo "Initializing git repository..."
+    git init
+    git remote add origin https://github.com/robel-samuel/NeonBox-website.git
+fi
 
 echo "Adding all files to git..."
 git add .
 
-echo "Creating initial commit..."
-git commit -m "Initial commit: NeonBox website with responsive design"
+# Check if there are changes to commit
+if ! git diff-index --quiet HEAD; then
+    echo "Creating commit..."
+    git commit -m "Update: NeonBox website with responsive design and deployment setup"
+    echo "Commit created successfully."
+else
+    echo "No changes to commit."
+fi
 
 echo ""
-echo "Setup complete! Your repository is ready to be pushed to GitHub."
-echo ""
+echo "Setting main branch..."
+git branch -M main
 
-echo "Instructions to push to GitHub:"
-echo "1. Create a new repository on GitHub at https://github.com/new"
-echo "   - Do NOT initialize with README"
-echo "   - Name it something like 'neonbox' or 'neon-website'"
 echo ""
-echo "2. Copy the repository URL from GitHub"
-echo "   (It will look like: https://github.com/yourusername/repository-name.git)"
+echo "Pushing to GitHub..."
+git push -u origin main
+
 echo ""
-echo "3. Run these commands:"
-echo "   git remote add origin YOUR_REPOSITORY_URL"
-echo "   git branch -M main"
-echo "   git push -u origin main"
+echo "Deployment complete! Your website has been pushed to:"
+echo "https://github.com/robel-samuel/NeonBox-website"
 echo ""
-echo "Replace YOUR_REPOSITORY_URL with the actual URL from step 2."
+echo "To enable automatic deployment, you need to set up a Personal Access Token:"
+echo "1. Go to https://github.com/settings/tokens"
+echo "2. Generate a new token with 'repo' scope"
+echo "3. Add it as a secret named 'DEPLOY_TOKEN' in your repository settings"
+echo "4. Enable GitHub Pages in repository settings (select GitHub Actions as source)"
