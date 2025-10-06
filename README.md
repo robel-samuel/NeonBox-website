@@ -81,16 +81,3 @@ infnity/
 - **Scroll Animations**: Added smooth scroll animations to all sections
 - **Improved UX**: Enhanced user experience with better visual feedback
 
-## 📄 License
-
-This project is proprietary to NeonBox and should not be used without permission.
-
-## 🙏 Acknowledgments
-
-- Images sourced from Unsplash
-- Design inspiration from modern neon artistry
-- Built with passion for lighting and design
-
----
-
-*Bright Ideas, Brilliant Solutions*
