@@ -92,3 +92,41 @@ This project is proprietary to NeonBox and should not be used without permission
 ---
 
 *Bright Ideas, Brilliant Solutions*
+
+```
+
+```
+# NeonBox Website - Red Theme Version
+
+This is a redesigned version of the NeonBox website with a red and white theme inspired by https://www.redbeautyandlace.com/, while maintaining all the original neon-themed content and services.
+
+## Changes Made
+
+1. **Color Scheme**: Changed from the original neon colors (cyan, magenta, purple) to a red and white theme
+2. **Design Enhancement**: Kept the neon-themed content but with a cleaner, more professional design
+3. **Simplified Effects**: Reduced excessive animations while maintaining the core functionality
+4. **Typography**: Kept the Orbitron font for headings to maintain the tech/neon feel
+5. **Navigation**: Updated to a cleaner design while keeping all original navigation items
+
+## Files Created/Modified
+
+- `index.html` - Main HTML file with original neon-themed content
+- `style-neon-red.css` - New CSS file with red and white theme while maintaining neon elements
+- `preloader-red.css` - Simplified preloader with red theme
+- `script.js` - JavaScript file with original functionality
+- `README.md` - This documentation file
+
+## Key Features Maintained
+
+- All original neon-themed content and services
+- Portfolio gallery with lightbox functionality
+- Responsive design for all device sizes
+- Smooth scrolling navigation
+- Contact information and social media links
+- Testimonials and process sections
+
+## How to View
+
+Simply open `index.html` in a web browser to view the redesigned website.
+
+The website maintains all the original content about neon signs and lighting solutions while presenting it in a cleaner, more professional red and white theme.

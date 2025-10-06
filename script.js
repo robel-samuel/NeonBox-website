@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 if (entry.isIntersecting) {
                     const container = entry.target;
                     const elements = container.querySelectorAll(
-                        '.service, .testimonial, .step, .info-item'
+                        '.service, .testimonial, .step, .info-card, .social-tile'
                     );
                     
                     // Apply staggered animation to children
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         
         // Observe containers that need staggered animations
-        const staggeredContainers = document.querySelectorAll('.services, .testimonial-grid, .process-steps, .contact-content');
+        const staggeredContainers = document.querySelectorAll('.services, .testimonial-grid, .process-steps, .contact-info-cards, .social-grid');
         staggeredContainers.forEach(container => {
             staggeredObserver.observe(container);
         });
@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Observe individual elements
         const individualElements = document.querySelectorAll(
-            '.scroll-animate, .portfolio-item, .footer-content > div'
+            '.scroll-animate, .portfolio-item, .footer-content > div, .hero-content, .about h2, .about p, .portfolio h2, .portfolio p, .locations h2, .locations p, .testimonials h2, .testimonials p, .process h2, .process p, .contact-header h2, .contact-header p'
         );
         individualElements.forEach(element => {
             elementObserver.observe(element);
@@ -169,6 +169,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (heroBanner) {
             window.addEventListener('scroll', () => {
                 const scrollPosition = window.pageYOffset;
+                // Apply parallax while preserving the zoom animation
                 heroBanner.style.transform = `translateY(${scrollPosition * 0.5}px) scale(1.1)`;
             });
         }
@@ -188,7 +189,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const targetElement = document.querySelector(targetId);
             
             window.scrollTo({
-                top: targetElement.offsetTop,
+                top: targetElement.offsetTop - 80, // Account for fixed navbar
                 behavior: 'smooth'
             });
         });
