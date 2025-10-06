@@ -21,8 +21,10 @@ NeonBox is a visually striking website designed to showcase custom neon signs an
 infnity/
 ├── index.html          # Main HTML file
 ├── style.css           # Main stylesheet
+├── style-neon-red.css  # Red/black theme stylesheet
 ├── script.js           # JavaScript functionality
-├── preloader.css       # Preloader animations
+├── preloader.css       # Original preloader animations
+├── preloader-red.css   # Red theme preloader
 ├── favicon.ico         # Website favicon
 └── photo/              # Image assets directory
     ├── *.jpg           # Portfolio images
@@ -32,27 +34,28 @@ infnity/
 ## 🎨 Design Elements
 
 - **Color Scheme**: 
-  - Primary: Vibrant Gold/Yellow (#FFC107, #FFD700)
-  - Background: Clean White (#FFFFFF)
-  - Accents: Dark Text with Neon Glows
+  - Primary: Vibrant Red (#FF0000)
+  - Background: Clean Black (#000000)
+  - Accents: White Text with Red Highlights
 - **Typography**: 
-  - Montserrat (Headings)
+  - Orbitron (Headings)
   - Poppins (Body Text)
 - **Visual Effects**: 
   - Text shadows for neon glow effects
   - Smooth transitions and hover animations
   - Parallax scrolling effects
+  - Scroll animations for content reveal
 
 ## 🚀 Getting Started
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/neonbox.git
+   git clone https://github.com/robel-samuel/NeonBox-website.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd neonbox
+   cd NeonBox-website
    ```
 
 3. Open `index.html` in your browser to view the website
@@ -72,12 +75,11 @@ infnity/
 - Touch-friendly navigation
 - Optimized images for fast loading
 
-## 📞 Contact Information
+## 🔄 Recent Updates
 
-For business inquiries, you can reach NeonBox at:
-- **Email**: info@neonbox.com
-- **Phone**: (123) 456-7890
-- **Address**: 123 Glow Street, Light City
+- **Red/Black Theme**: Updated design with selective background images on hero and testimonials sections only
+- **Scroll Animations**: Added smooth scroll animations to all sections
+- **Improved UX**: Enhanced user experience with better visual feedback
 
 ## 📄 License
 
@@ -92,41 +94,3 @@ This project is proprietary to NeonBox and should not be used without permission
 ---
 
 *Bright Ideas, Brilliant Solutions*
-
-```
-
-```
-# NeonBox Website - Red Theme Version
-
-This is a redesigned version of the NeonBox website with a red and white theme inspired by https://www.redbeautyandlace.com/, while maintaining all the original neon-themed content and services.
-
-## Changes Made
-
-1. **Color Scheme**: Changed from the original neon colors (cyan, magenta, purple) to a red and white theme
-2. **Design Enhancement**: Kept the neon-themed content but with a cleaner, more professional design
-3. **Simplified Effects**: Reduced excessive animations while maintaining the core functionality
-4. **Typography**: Kept the Orbitron font for headings to maintain the tech/neon feel
-5. **Navigation**: Updated to a cleaner design while keeping all original navigation items
-
-## Files Created/Modified
-
-- `index.html` - Main HTML file with original neon-themed content
-- `style-neon-red.css` - New CSS file with red and white theme while maintaining neon elements
-- `preloader-red.css` - Simplified preloader with red theme
-- `script.js` - JavaScript file with original functionality
-- `README.md` - This documentation file
-
-## Key Features Maintained
-
-- All original neon-themed content and services
-- Portfolio gallery with lightbox functionality
-- Responsive design for all device sizes
-- Smooth scrolling navigation
-- Contact information and social media links
-- Testimonials and process sections
-
-## How to View
-
-Simply open `index.html` in a web browser to view the redesigned website.
-
-The website maintains all the original content about neon signs and lighting solutions while presenting it in a cleaner, more professional red and white theme.
